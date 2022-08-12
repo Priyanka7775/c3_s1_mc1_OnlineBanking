@@ -13,11 +13,10 @@ public class SavingAccount {
         }
     }
 
-    public long autoGenerateAccountNumber(String[] args) {
+    public long autoGenerateAccountNumber() {
+        Random random = new Random();
         Math.random();
-        long number=(long) (Math.random()*1000000000000L);
-        Random obj = new Random();
-        System.out.println(obj.nextLong());
+        System.out.println(Math.round(random.nextFloat()*Math.pow(10,12)));
     }
 
     public double checkAccountBalance(){
